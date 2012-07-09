@@ -73,10 +73,10 @@
         		
 		<copy toDir="${ciknow.assembler.dir}/build" overwrite="true">
 			<fileset dir="${basedir}/lib">
-				<include name="**/*.jar"/>
+				<include name="*.jar"/>
 			</fileset>
 			<fileset dir="${basedir}">
-				<include name="**/*.jar"/>
+				<include name="*.jar"/>
 			</fileset>			
 		</copy>		
 	</target> 
@@ -86,10 +86,10 @@
         		
 		<copy toDir="${ciknowmgr.assembler.dir}/build/WEB-INF/template/server" overwrite="true">
 			<fileset dir="${basedir}/lib">
-				<include name="**/*.jar"/>
+				<include name="*.jar"/>
 			</fileset>
 			<fileset dir="${basedir}">
-				<include name="**/*.jar"/>
+				<include name="*.jar"/>
 			</fileset>			
 		</copy>	
 	</target>   	
