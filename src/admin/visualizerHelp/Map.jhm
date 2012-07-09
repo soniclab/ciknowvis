@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE map
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 1.0//EN"
+         "http://java.sun.com/javase/technologies/desktop/javahelp/map_1_0.dtd">
+
+<map version="1.0">
+	<mapID target="toplevelfolder" url="title.jpg" />
+	<mapID target="top" url="help/intro.html" />
+
+	<mapID target="intro" url="help/intro.html" />
+	
+	
+	<mapID target="file" url="help/file.html" />
+	<mapID target="applet" url="help/file.html#Applet" />
+	<mapID target="application" url="help/file.html#Application" />
+	<mapID target="onlineSave" url="help/file.html#OnlineSave" />
+	<mapID target="open" url="help/file.html#Open" />
+	<mapID target="saveData" url="help/file.html#SaveData" />
+	<mapID target="saveImage" url="help/file.html#SaveImage" />
+	
+	
+	<mapID target="layout" url="help/layout.html" />
+	<mapID target="circle" url="help/layout.html#CircleLayout" />
+	<mapID target="random" url="help/layout.html#RandomLayout" />
+	<mapID target="cluster" url="help/layout.html#ClusterLayout" />
+        <mapID target="tree" url="help/layout.html#TreeLayout" />
+	<mapID target="group" url="help/layout.html#GroupLayout" />
+	
+	
+	<mapID target="edit" url="help/edit.html" />
+
+	<mapID target="hideSe" url="help/edit.html#HideSe" />
+	<mapID target="showSe" url="help/edit.html#ShowSe" />
+	<mapID target="hideIso" url="help/edit.html#HideIso" />
+	
+	<mapID target="h-sNodeType" url="help/edit.html#HSNodeType" />
+	<mapID target="h-sEdgeType" url="help/edit.html#HSEdgeType" />
+	<mapID target="limit" url="help/edit.html#Limit" />
+	<mapID target="all" url="help/edit.html#All" />
+	<mapID target="reset" url="help/edit.html#Reset" />
+	
+	
+	<mapID target="option" url="help/option.html" />
+	<mapID target="fit" url="help/option.html#Fit" />
+	<mapID target="mini" url="help/option.html#Mini" />
+	<mapID target="image" url="help/option.html#Image" />
+	<mapID target="shape" url="help/option.html#Shape" />
+	<mapID target="resize" url="help/option.html#Resize" />
+	<mapID target="shLabel" url="help/option.html#Label" />
+	<mapID target="depth" url="help/option.html#Depth" />
+	<mapID target="strength" url="help/option.html#Strength" />
+	<mapID target="edgeWidth" url="help/option.html#Weight" />
+	
+	<mapID target="view" url="help/view.html" />
+	<mapID target="zoomSe" url="help/view.html#ZoomSe" />
+	<mapID target="ezoomIn" url="help/view.html#EZoomIn" />
+	<mapID target="ezoomOut" url="help/view.html#EZoomOut" />
+	<mapID target="gzoomIn" url="help/view.html#GZoomIn" />
+	<mapID target="gzoomOut" url="help/view.html#GZoomOut" />
+	<mapID target="move" url="help/view.html#Move" />
+	
+	<mapID target="other" url="help/other.html" />
+	<mapID target="search" url="help/other.html#Search" />
+	<mapID target="nodeFilter" url="help/other.html#NodeFilter" />
+	<mapID target="relationFilter" url="help/other.html#RelationFilter" />
+	<mapID target="color" url="help/other.html#Color" />
+	<mapID target="selection" url="help/other.html#Selection" />
+	<mapID target="hideEdge" url="help/other.html#HideEdge" />
+	<mapID target="nodeInfo" url="help/other.html#NodeInfo" />
+	<mapID target="edgeInfo" url="help/other.html#EdgeInfo" />
+	
+	
+	<mapID target="rec" url="help/rec.html" />
+	<mapID target="nodeType" url="help/rec.html#NodeType" />
+	<mapID target="attribute" url="help/rec.html#Attribute" />
+	<mapID target="why" url="help/rec.html#Why" />
+	
+
+</map>
+

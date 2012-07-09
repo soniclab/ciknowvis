@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='ISO-8859-1'  ?>
+<!DOCTYPE toc
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 2.0//EN"
+         "../dtd/toc_2_0.dtd">
+<toc version="2.0">
+<tocitem text="Visualizer User Guide" image="toplevelfolder">
+
+   <tocitem text="General Information" target="intro"/>
+   	<tocitem text="Open/Save Network" target="file">
+
+	       	<tocitem text="For Online Visualizer" target="applet">
+	       		<tocitem text="Save Graph" target="onlineSave"/>
+	       	</tocitem>
+	       	
+	       		
+	       	<tocitem text="For Standalone Visualizer" target="application">
+	       		<tocitem text="Open Graph File" target="open"/>
+	       		<tocitem text="Save Graph Data" target="saveData"/>
+	       		<tocitem text="Save Graph Image" target="saveImage"/>
+	       	</tocitem>
+       </tocitem>
+
+       <tocitem text="Layout" target="layout">
+       		<tocitem text="Put Nodes In Circle" target="circle"/>
+       		<tocitem text="Randomly Scatter Nodes" target="random"/>
+       		<tocitem text="Automatically Cluster Network" target="cluster"/>
+       		<tocitem text="Put Nodes in Radial Tree" target="tree"/>
+       		<tocitem text="Group Nodes by Attribute" target="group"/>
+       </tocitem>
+        
+       <tocitem text="Edit Network" target="edit">    	 	
+       	 	<tocitem text="Hide Selection" target="hideSe"/>
+		<tocitem text="Show Selection" target="showSe"/>
+         	<tocitem text="Hide Isolate Node" target="hideIso"/>   	 
+         	<tocitem text="Hide/Show Selected NodeType/Attribute" target="h-sNodeType"/>
+         	<tocitem text="Hide/Show Selected EdgeType" target="h-sEdgeType"/>
+         	<tocitem text="Limit Edge Strength" target="limit"/>
+       		<tocitem text="Show All" target="all"/>
+       		<tocitem text="Reset Saved Network" target="reset"/>
+       </tocitem>
+       
+       
+       <tocitem text="Display Options" target="option">    
+       		<tocitem text="Fit Graph to Screen" target="fit"/>
+	       	<tocitem text="Minimize Nodes" target="mini"/>
+	       	<tocitem text="Show Node Image" target="image"/>
+	       	<tocitem text="Node Shape By NodeType/Attribute" target="shape"/>
+	       	<tocitem text="Resize Node By NodeType/Attribute" target="resize"/>
+	       	<tocitem text="Show/Hide Label" target="shLabel"/>	       		
+	       	<tocitem text="Node Depth" target="depth"/>	       		
+	       	<tocitem text="Show Edge Strengths" target="strength"/>
+	       	<tocitem text="Edge thickness by Weight" target="edgeWidth"/>	       			       
+       </tocitem>
+       		
+       
+       <tocitem text="View" target="view">
+       		<tocitem text="Zoom to Selection" target="zoomSe"/>
+       		<tocitem text="Zoom in on Edges" target="ezoomIn"/>
+       		<tocitem text="Zoom out on Edges" target="ezoomOut"/>
+       		<tocitem text="Zoom in on Graph" target="gzoomIn"/>
+       		<tocitem text="Zoom out on Graph" target="gzoomOut"/>
+       		<tocitem text="Move Graph" target="move"/>     
+       </tocitem>
+       
+       
+       
+       <tocitem text="Other Functions" target="other">
+       		<tocitem text="Search for a node" target="search"/>
+       		<tocitem text="Node Filtering by Depth" target="nodeFilter"/>
+	       	<tocitem text="Filter Relation Type" target="relationFilter"/>
+	       	<tocitem text="Change Color" target="color"/>
+	       	<tocitem text="Node Selection and Deselection" target="selection"/>
+	       	<tocitem text="Hide Edge" target="hideEdge"/> 
+	       	<tocitem text="Node Profiles" target="nodeInfo"/>
+	       	<tocitem text="Edge Profiles" target="edgeInfo"/>
+       </tocitem>
+       
+       <tocitem text="Recommendation" target="rec">
+       		<tocitem text="Recommendation Based on Node Type" target="nodeType"/>
+              	<tocitem text="Recommendation Based on Attribute" target="attribute"/>
+              	<tocitem text="Recommendation Description" target="why"/>
+              	
+       </tocitem>
+       
+
+  <!-- <tocitem text="Beans In IDE" target="story"/>
+
+   <tocitem text="Beans In IDE - in Popup" target="bean.story" presentationtype="javax.help.Popup"/> --->
+</tocitem>
+</toc>
+
+
+
+
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="CIKNOW Visualizer" basedir="." default="deploy-ciknow-assembler">
+	<property file="build.properties"/>
+    <property environment="env"/>
+	
+    <property name="src" value="${basedir}/src"/>
+    <property name="build" value="${basedir}/build"/>
+    	
+	<path id="compile.classpath">
+		<fileset dir="${basedir}">
+            <include name="servlet-api.jar"/>
+            <include name="prefuse.jar"/>
+            <include name="jh.jar"/>
+            <include name="jhall.jar"/>
+            <include name="jhbasic.jar"/>
+            <include name="jsearch.jar"/>
+            <include name="swinglayout.jar"/>
+        </fileset>
+	</path>
+
+	<path id="compile5.classpath">
+		<fileset dir="${basedir}">
+            <include name="servlet-api.jar"/>
+            <include name="prefuse5.jar"/>
+            <include name="jh.jar"/>
+            <include name="jhall.jar"/>
+            <include name="jhbasic.jar"/>
+            <include name="jsearch.jar"/>
+            <include name="swinglayout.jar"/>
+        </fileset>
+	</path>
+
+   
+
+    <target name="clean" description="Delete old build directory and jar file">
+		<delete dir="${build}"/>	
+	</target>
+			
+    <target name="init" depends="clean">
+        <tstamp/>
+    	<mkdir dir="${build}"/>
+    </target>
+	
+	<target name="compile" description="Compile Java sources and create jar distribution">
+		<antcall target="init"/>
+		<javac srcdir="${src}" 
+			destdir="${build}" 
+			classpathref="compile.classpath">			
+		</javac>
+
+		<copy  todir="${build}">
+			<fileset dir="${src}" excludes="**/*.java"/>
+		</copy>		
+		
+		<jar destfile="${basedir}/graphApplet.jar" basedir="${build}"/>
+	</target>
+	
+	<target name="compile5" description="Compile Java sources and create jar distribution">		
+		<antcall target="init"/>
+		<javac srcdir="${src}" 
+			destdir="${build}" 
+			compiler="javac1.5"
+			fork="true"
+			executable="${java5.path}"
+			classpathref="compile5.classpath">			
+		</javac>
+
+		<copy  todir="${build}">
+			<fileset dir="${src}" excludes="**/*.java"/>
+		</copy>		
+		
+		<jar destfile="${basedir}/graphApplet5.jar" basedir="${build}"/>
+	</target>	
+			
+	<target name="deploy-ciknow-assembler" depends="compile, compile5" 
+		description="Copy ciknow visualizer components to ciknow-assembler">
+        		
+		<copy toDir="${ciknow.assembler.dir}/build" overwrite="true">
+			<fileset dir="${basedir}">
+				<include name="**/*.jar"/>
+			</fileset>
+		</copy>		
+	</target> 
+	
+	<target name="deploy-ciknowmgr-assembler" depends="compile, compile5" 
+		description="Copy ciknow visualizer components to ciknowmgr-assembler">
+        		
+		<copy toDir="${ciknowmgr.assembler.dir}/build/WEB-INF/template/server" overwrite="true">
+			<fileset dir="${basedir}">
+				<include name="**/*.jar"/>
+			</fileset>
+		</copy>	
+	</target>   	
+</project>
