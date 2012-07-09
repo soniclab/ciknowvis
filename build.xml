@@ -5,28 +5,24 @@
 	
     <property name="src" value="${basedir}/src"/>
     <property name="build" value="${basedir}/build"/>
-    	
+    
+	<path id="shared.classpath">
+		<fileset dir="${basedir}/lib">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	
 	<path id="compile.classpath">
+		<path refid="shared.classpath"/>
 		<fileset dir="${basedir}">
-            <include name="servlet-api.jar"/>
             <include name="prefuse.jar"/>
-            <include name="jh.jar"/>
-            <include name="jhall.jar"/>
-            <include name="jhbasic.jar"/>
-            <include name="jsearch.jar"/>
-            <include name="swinglayout.jar"/>
         </fileset>
 	</path>
 
 	<path id="compile5.classpath">
+		<path refid="shared.classpath"/>
 		<fileset dir="${basedir}">
-            <include name="servlet-api.jar"/>
             <include name="prefuse5.jar"/>
-            <include name="jh.jar"/>
-            <include name="jhall.jar"/>
-            <include name="jhbasic.jar"/>
-            <include name="jsearch.jar"/>
-            <include name="swinglayout.jar"/>
         </fileset>
 	</path>
 
@@ -76,9 +72,12 @@
 		description="Copy ciknow visualizer components to ciknow-assembler">
         		
 		<copy toDir="${ciknow.assembler.dir}/build" overwrite="true">
-			<fileset dir="${basedir}">
+			<fileset dir="${basedir}/lib">
 				<include name="**/*.jar"/>
 			</fileset>
+			<fileset dir="${basedir}">
+				<include name="**/*.jar"/>
+			</fileset>			
 		</copy>		
 	</target> 
 	
@@ -86,9 +85,12 @@
 		description="Copy ciknow visualizer components to ciknowmgr-assembler">
         		
 		<copy toDir="${ciknowmgr.assembler.dir}/build/WEB-INF/template/server" overwrite="true">
-			<fileset dir="${basedir}">
+			<fileset dir="${basedir}/lib">
 				<include name="**/*.jar"/>
 			</fileset>
+			<fileset dir="${basedir}">
+				<include name="**/*.jar"/>
+			</fileset>			
 		</copy>	
 	</target>   	
 </project>
